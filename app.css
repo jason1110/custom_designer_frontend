@@ -1,0 +1,38 @@
+
+
+.jumbotron.jumbotron-fluid{
+    background-image: url("/assets/images/bold-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-container .card{
+    width: 18rem;
+    flex: 0 1 calc(25% - 1em);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.btn-container .btn{
+    margin: 1rem;
+}
