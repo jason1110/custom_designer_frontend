@@ -40,7 +40,7 @@ body {
 .card-container .card{
     flex: 0 1 calc(25% - 1em);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 2rem;
