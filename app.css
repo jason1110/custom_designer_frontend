@@ -30,17 +30,18 @@ body {
     padding-right: 2rem;
     margin-top: 0 auto;
     margin-bottom: 1rem;
+    font-style: italic;
     display: block;
     font-size: 2.5rem;
     font-family: "Poppins";
 }
 
 #p2{
-    margin-left: 8rem;
+    margin-left: 23rem;
 }
 
 #p3{
-    margin-left: 16rem;
+    margin-left: 46rem;
 }
 
 .card-container {
