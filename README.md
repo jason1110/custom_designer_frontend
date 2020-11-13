@@ -9,7 +9,7 @@
 * [Getting Started](#getting_started)
 * [About](#about)                 
 * [Features](#features)
-* [Future Features](#future_features)
+* [Future Features](#future-features)
 * [Technologies](#technilogies)
 * [Contact](#contact)
 
