@@ -1,7 +1,7 @@
 # Custom label
 
 
-* Wear your Words! Show your Colors! Share your Style!
+Wear your Words! Show your Colors! Share your Style!
 
 ## Table of Contents
 
