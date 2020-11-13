@@ -18,13 +18,10 @@
 [Workout Buddy](https://www.loom.com/share/494a7a707dd94e7bbee160702bbe4fa6)
 
 ## Getting Started
-* 1. Go tohttps://github.com/jason1110/custom_designers_backend, fork and clone the repository
-* 2. Follow the setup instructions in the custom_designers_backend README
-* 3. Run the command: npx knex migrate:latest
-* 4. Run the command: npx knex seed:run
-* 5. Run the command: npm start
-* 6. fork and clone this repo
-* 7. in the terminal, run the command: lite-server
+ 1. Go to https://github.com/jason1110/custom_designers_backend, fork and clone the repository
+ 2. Follow the setup instructions in the custom_designers_backend README
+ 3. fork and clone this repo
+ 4. in the terminal, run the command: `lite-server`
 
 
 ## About
