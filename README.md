@@ -42,7 +42,7 @@ Custom Label is a simple product design web app simulation which allows a user t
 * A user will be able to save their creation and see it in thier profile once they are logged in.
 
 ## Tech
-* Node JS with teh following dependencies:
+* Node JS with the following dependencies:
    * "bcrypt": "^5.0.0",
    * "cors": "^2.8.5",
    * "express": "^4.17.1",
