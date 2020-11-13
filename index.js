@@ -34,7 +34,44 @@ function showProductCard(eachProduct){
     cardTitle.textContent = eachProduct.name
     createButton.innerText = 'Create'
     listenForCreate(createButton, eachProduct)
-    switch(eachProduct.product_type){
+
+productCard.addEventListener('mouseover', (e) =>{
+    boxShadowGen = randomBoxShadow()
+    productCard.style.boxShadow = boxShadowGen
+})
+
+    getProductImage(eachProduct, cardImage)
+    
+    productCard.append(cardImage, cardTitle, createButton)
+    cardContainer.appendChild(productCard)
+}
+
+function randomBoxShadow() {
+    const colors = ['#ff0', '#f0f', '#0ff', '#000']
+    const shadow1 = '0 8px 16px 0' 
+    const shadow2 = '0 6px 20px 0' 
+    const shadow3 = '0 4px 24px 0' 
+
+    function randomColor1(){
+        return shadow1 + colors[Math.floor(Math.random() * colors.length)]
+    }
+    function randomColor2(){
+        return shadow2 + colors[Math.floor(Math.random() * colors.length)]
+    }
+    function randomColor3(){
+        return shadow3 + colors[Math.floor(Math.random() * colors.length)]
+    }
+    return randomColor1(),randomColor2(),randomColor3()
+}
+
+function listenForCreate(createButton, eachProduct){
+    createButton.addEventListener('click', (e) => {
+        document.location.href = `showProduct.html?product_id=${eachProduct.id}`
+    })
+}
+
+function getProductImage(product, cardImage){
+    switch(product.product_type){
         case "Mens-Shirt":
             cardImage.src='./assets/images/tshirt_men/mens_tshirt.png'
             break
@@ -54,12 +91,4 @@ function showProductCard(eachProduct){
             cardImage.src='./assets/images/mask/white-mask.png'
             break;
     }
-    productCard.append(cardImage, cardTitle, createButton)
-    cardContainer.appendChild(productCard)
-}
-
-function listenForCreate(createButton, eachProduct){
-    createButton.addEventListener('click', (e) => {
-        document.location.href = `showProduct.html?product_id=${eachProduct.id}`
-    })
 }

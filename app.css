@@ -7,26 +7,40 @@ body {
 .jumbotron.jumbotron-fluid{
     background-image: url("/assets/images/cmyk_background.png");
     background-repeat: no-repeat;
-    background-color: white;
     background-size: 100% 100%;
     padding-bottom: 1rem;
+    margin-bottom: 0;
+    background-color: rgba(128, 128, 128, 0.105);
 }
 
-
 .jumbotron .display-4 {
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-left: 0;
+    padding-bottom: 12rem;
     font-size: 5rem;
     color: #0c94e3;
     font-weight: bold;
     font-style: italic;
+    font-family: "Poppins";
 }
 
 .jumbotron .lead {
-    padding-top: 15rem;
+    /* padding-left: 5rem; */
+    padding-top: 0;
     padding-right: 2rem;
     margin-top: 0 auto;
     margin-bottom: 1rem;
     display: block;
+    font-size: 2.5rem;
+    font-family: "Poppins";
+}
+
+#p2{
+    margin-left: 8rem;
+}
+
+#p3{
+    margin-left: 16rem;
 }
 
 .card-container {
@@ -34,7 +48,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    
+    background-color: rgba(128, 128, 128, 0.105);
 }
 
 .card-container .card{
@@ -46,7 +60,13 @@ body {
     margin: 2rem;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-image: 
+    linear-gradient( to bottom right, rgba(0, 0, 255, 0.18), rgba(255, 192, 203, 0.208)),
+    linear-gradient(to bottom left, rgba(0, 0, 0, 0.132), rgba(255, 255, 0, 0.18));
+    box-shadow: 
+    0 8px 16px 0 #fff, 
+    0 6px 20px 0 #f0f,
+    0 4px 24px 0 #0ff
 }
 .card-container .card-img-top{
 width: 100%;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= 'stylesheet' href='show_product.css'>
-    <!-- <link href="https://fonts.goopleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -15,21 +15,38 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>product</h1>
     
 <section id='card-section'>
     <div class='card-container'>
         <div id='info-card'>
+            <div class='card-title'></div>
             <form id='text-form'>
-                <input class="text" type='text' name='text' placeholder="-- enter your text here --"></textarea>
-                <button class="addText btn" type='submit' >Add To Design</button>
+                <label for="text-box">Add Words</label>
+                <textarea class="text" type='text' name='text' placeholder="-- enter your text here --"></textarea>
+                <select type='select' name='font-select' placeholder='Select a font'>
+                        <optgroup style="font-family:arial">
+                            <option>Arial</option>
+                        </optgroup>
+                        <optgroup style="font-family:veranda">
+                            <option>veranda</option>
+                        </optgroup>
+                </select>
+                <div id='text-color-box'>
+                    <input type='color' id='text-color' name='text-color'>
+                    <label id='text-color-label' for='text-color'>Text Color</label>  
+                </div>  
+                <button class="addText btn-success" id="text-box" type='submit' >Add To Design</button>
             </form>
+            <div id='color-select'>
+                <label for='image-color'>Change Color</label>
+            </div>
             <div id='size-btns'>
-                <button>XS</button>
-                <button>S</button>
-                <button>M</button>
-                <button>L</button>
-                <button>XL</button>
+                <p> Select a Size</p>
+                <button class='active'>XS</button>
+                <button class='active'>S</button>
+                <button class='active'>M</button>
+                <button class='active'>L</button>
+                <button class='active'>XL</button>
             </div>
         </div>
         <div class='card'>
@@ -37,7 +54,6 @@
             style="cursor: text;">
             </canvas>
         </div>
-
     </div>
 </section>
 

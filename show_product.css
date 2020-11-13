@@ -1,27 +1,29 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* body {
-    overflow: hidden;
-} */
+body {
+    /* overflow: hidden; */
+    font-family: "Poppins", sans-serif;
+}
 
 .card-container {
-    /* display: grid; */
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* text-align: center; */
+    margin: 0;
     width: 100%;
-    
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 1em;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.098);
 }
 
-.card-container .card{
+/* image section */
+
+.card-container .card {
     flex: 0 1 calc(25% - 1em);
     display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: space-evenly;
     margin-left: auto; 
     margin-right: auto;
     height: auto;
@@ -30,21 +32,15 @@
     flex-wrap: wrap;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     position: relative;
-    width: 500px;
+    width: 80%;
     overflow: hidden;
 }
 
-input[type='color']{
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    z-index: 2;
-}
 .card-container .card-img{
 width: 100%;
 height: 100vh;
 object-fit: contain;
-z-index: 1;
+
 }
 
 .bg {
@@ -52,21 +48,188 @@ z-index: 1;
     top: 0; 
     width: 100%;
     height: 100vh;
-    z-index: 1;
     mix-blend-mode: color;
 }
 
-.card-title {
-    margin-top: 0 auto;
-    display: block;
-}
 
-
-#text-canvas {
+#text-canvas-womens {
     position: absolute;
     align-self: center;
-    top: 25%;
+    justify-self: center;
+    width: 45%;
+    top: 26%;
+    z-index: 2;
+    margin-left: 26%;
+}
+#text-canvas-mens {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 30%;
+    z-index: 2;
+    margin-left: 32%;
+}
+#text-canvas-sleeve {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 30%;
+    z-index: 2;
+    margin-left: 33%;
+}
+#text-canvas-hat {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 28%;
     /* background-color: green; */
     z-index: 2;
-    margin: auto;
+    height: 40%;
+    margin-left: 32%;
 }
+#text-canvas-mask {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 28%;
+    /* background-color: green; */
+    z-index: 2;
+    height: 40%;
+    margin-left: 32%;
+}
+#text-canvas-mug {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 30%;
+    /* background-color: green; */
+    z-index: 2;
+    height: 40%;
+    margin-left: 15%;
+}
+
+
+
+ /* info section */
+/* #info-card {
+    display: grid;
+    justify-items: start;
+    padding-left: 1rem;
+    grid-auto-rows: 50px;
+} */
+.card-container #info-card {
+    /* display: flex; */
+    display: grid;
+    justify-items: stretch;
+    /* flex-direction: column; */
+}
+
+.card-title {
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    order: -2;
+}
+
+.card-title h4{
+    font-size: 4.5rem;
+}
+
+#color-select{
+    order: -2;
+    display: grid;
+    align-self: center;
+}
+
+ #color-select label{
+    font-size: 3rem;
+ }
+
+input[type='color']{
+    z-index: 2;
+    margin: 1rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    cursor: pointer;
+    /* background-color: tomato; */
+}
+
+
+#text-form{
+    display: grid;
+    align-items: start;
+}
+
+#text-form label{
+    font-size: 3rem;
+}
+
+#text-form select {
+    padding: 0.5rem;
+    margin-top: 15px;
+    width: 75%
+}
+
+
+#text-form #text-color-label{
+    font-size: 2.5rem;
+}
+
+.text{
+    width: 75%;
+    height: 110%
+}
+
+#text-form button {
+    width: 30%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0rem;
+    background: #2f20d0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+#size-btns{
+    /* display: flex; */
+
+    transition: all 0.75s ease-out;
+}
+
+#size-btns button{
+    padding: .5rem 2rem;
+    margin: 0.5rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+#size-btns button .active{
+    background: #585858;
+    color: white;
+}
+
+#size-btns p{
+    font-size: 3rem;
+}
+
+.purchase-button {
+    width: 30%;
+    padding: 1rem 0rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    align-self: start;
+}
+
+
