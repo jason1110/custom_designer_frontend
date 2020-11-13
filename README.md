@@ -5,28 +5,28 @@ Wear your Words! Show your Colors! Share your Style!
 
 ## Table of Contents
 
+* [About](#about) 
 * [Demo Video](#demo_video)
-* [Getting Started](#getting_started)
-* [About](#about)                 
+* [Getting Started](#getting_started)             
 * [Features](#features)
 * [Future Features](#future-features)
 * [Technologies](#technilogies)
 * [Contact](#contact)
 
+
+## About
+
+Custom Label is a simple product design web app simulation which allows a user to select from a list of products and add customizations to the product.  Users can currently change the color of the product and add text to appear on the product. 
+
 ## Demo Video
 
-[Custom Label] https://www.loom.com/share/814288606e2e48dab9352318bc08d9cf
+https://www.loom.com/share/814288606e2e48dab9352318bc08d9cf
 
 ## Getting Started
  1. Go to https://github.com/jason1110/custom_designers_backend, fork and clone the repository
  2. Follow the setup instructions in the custom_designers_backend README
  3. fork and clone this repo
  4. in the terminal, run the command: `lite-server`
-
-
-## About
-
-Custom Label is a simple product design web app simulation which allows a user to select from a list of products and add customizations to the product.  Users can currently change the color of the product and add text to appear on the product. 
 
 ## Features
 
