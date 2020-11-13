@@ -1,4 +1,4 @@
-# Cusotm label
+# Custom label
 
 
 * Wear your Words! Show your Colors! Share your Style!
@@ -9,9 +9,9 @@
 * [Getting Started](#getting_started)
 * [About](#about)                 
 * [Features](#features)
+* [Future Features](#future_features)
 * [Technologies](#technilogies)
 * [Contact](#contact)
-* [References](#references)
 
 ## Demo Video
 
@@ -36,7 +36,7 @@ Custom Label is a simple product design web app simulation which allows a user t
 * Select products to create a custom product
 * change the color, and add text to the product using HTML5 canvas
 
-## Future-Features
+## Future Features
 
 * Custom Label has backend capability to create users and allow them to login, however the feature has not yet been added to the front-end webpage
 * A user will be able to save their creation and see it in thier profile once they are logged in.
